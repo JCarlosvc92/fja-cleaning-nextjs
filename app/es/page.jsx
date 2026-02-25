@@ -2,6 +2,11 @@
 import Hero from '../../components/Hero'
 import Services from '../../components/Services'
 import ContactForm from '../../components/ContactForm'
+import { redirect } from "next/navigation";
+
+export default function Home() {
+  redirect("/es"); // Cambiar a /en si querés inglés
+}
 
 export default function Page() {
   const items = [
